@@ -3,7 +3,7 @@
 
 ## Format
 
-Presentation [Link to Presentation](https://github.com/lipinght/PBIHackathon/blob/main/PerformanceBestPractice/Presentation/Power%20BI%20Best%20Practices.pptx)
+Presentation [Link to Presentation](https://github.com/lipinght/PBIHackathon/tree/main/VisualizationBestPractice/Presentation)
 
 
 ## Target Audience
