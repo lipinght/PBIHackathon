@@ -12,3 +12,4 @@ This is a repo containing modules for Power BI Hackathon, these modules can be d
 | [Performance Best Practice](https://github.com/lipinght/PBIHackathon/blob/main/PerformanceBestPractice/Performance.md) | Presentation | Modeller | 1 hour |
 | [Power BI Synapse Better Together](https://github.com/lipinght/PBIHackathon/blob/main/PowerBISynapse/Synapse.md) | Presentation+Demo | Engineers; Modellers | 1 hour |
 | [Visualization Best Practice](https://github.com/lipinght/PBIHackathon/blob/main/VisualizationBestPractice/Visualization.md) | Presentation | Report Builder | 1 hour |
+| [Hybrid Tables](https://github.com/lipinght/PBIHackathon/blob/main/HybridTables/HybridTables.md) | Presentation | Modeller | 1 hour |
