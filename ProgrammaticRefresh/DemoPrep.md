@@ -116,39 +116,4 @@ Step 5. Deploy the updated dataset to a premium workspace, below is Tabular Edit
 
 ## Part 2 Infrastructure Setup
 
-Follow the instruction [here](https://github.com/mariuspc/pbi-xmla-refresh) for steps 1-8. For step 9, use below script instead.
-
-XMLA script example 1 - fully refresh a table called Customer from a dataset called adventureworks.
-```
-
-{"sequence":{"operations": [{"refresh": 
-                    {"type": "full","objects": 
-                        [
-                            {"database": "adventureworks","table": "Customer"}
-                            ]
-                            }
-                        }]}}
-
-```
-XMLA script example 2 - fully refresh a table called SalesOrderHeader and a partition called PartitionBlack from a dataset called adventureworks.
-
-```
-{"sequence":{"operations": [{"refresh": 
-                    {"type": "full","objects": 
-                        [
-                            {"database": "adventureworks","table": "Product", "partition": "PartitionBlack"},
-                            {"database": "adventureworks","table": "SalesOrderHeader"}
-                            ]
-                            }
-                        }]}}
-```
-XMLA script example 3 - fully refresh a table called SalesOrderDetail from a dataset called adventureworks, while also specifying a max parallelism of 10.
-```
-{"sequence":{"maxParallelism": 10,"operations": [{"refresh": 
-                    {"type": "full","objects": 
-                        [
-                            {"database": "adventureworks","table": "SalesOrderDetail"}
-                            ]
-                            }
-                        }]}}
-```
+Follow the instruction [here](https://github.com/mariuspc/pbi-xmla-refresh) for steps 1-9
