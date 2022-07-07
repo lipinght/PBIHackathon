@@ -25,3 +25,5 @@ Optional
 * Add PartitionRed to the script in Step 9 [here](https://github.com/mariuspc/pbi-xmla-refresh) to show refreshing multiple partitions in parellel. 
 
 
+
+[Link to Demo Video](https://youtu.be/abXZmow0EUo)
