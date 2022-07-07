@@ -5,7 +5,6 @@
 
 Presentation + DEMO [Link to Presentation + DEMO](https://github.com/lipinght/PBIHackathon/blob/main/RLS/Presentation/PowerBIRLS.pptx)
 
-Hands on Lab for Deployment Pipeline (WIP)
 
 ## Target Audience
 
