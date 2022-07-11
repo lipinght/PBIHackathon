@@ -1,5 +1,5 @@
 # DirectQuery for Power BI datasets Lab
-This lab walks through how to connect with DirectQuery to a dataset published within Power BI Service.
+This lab walks through how to connect with DirectQuery to a dataset published to Power BI Service and how to enrich the metadata of this model with new columns.
 
 **Note:** In order to do this lab, you will need access to premium or premium per user capacity. Do the [prerequisite](https://github.com/lipinght/pbideployment/blob/main/AdvAnalytics/Prerequisite.md#provision-workspace) before starting the lab
 
@@ -51,3 +51,9 @@ This lab walks through how to connect with DirectQuery to a dataset published wi
 17. Create a new **Table** visual and in the **Fields** > **Sales** table select columns **SalesAmount** and **SalesQuantityBand**
 
 ![dq7.png](images/dq7.png)
+
+18. In Power BI Desktop, save your changes then on the menu ribbon click **Publish**
+
+19. Select a workspace to publish to (If you don’t have a workspace make sure you completed the Prerequisite steps)
+
+20. Click OK
