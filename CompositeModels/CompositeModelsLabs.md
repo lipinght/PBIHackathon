@@ -2,7 +2,7 @@
 | Labs | Overview | 
 |:------:|:---------:|
 |[Prerequisite](https://github.com/lipinght/PBIHackathon/blob/main/AIinPowerBI/Prerequisite.md)|This page summurizes prerequisites needed to run this series of labs|
-|[DirectQuery for Power BI datasets Lab](https://github.com/lipinght/PBIHackathon/blob/main/AIinPowerBI/AutoML.md)|This lab walks through how to connect with Direct Query to a Power BI dataset in the cloud from Power BI Desktop|
+|[DirectQuery for Power BI datasets Lab](https://github.com/lipinght/PBIHackathon/blob/main/CompositeModels/DirectQueryforPowerBIdatasetsLab.md)|This lab walks through how to connect with Direct Query to a Power BI dataset in the cloud from Power BI Desktop|
 |[Composite Model Lab](https://github.com/lipinght/PBIHackathon/blob/main/AIinPowerBI/TextAnalyticsLab.md)|This lab walks through creating, updating, refreshing and publishing a composite model|
 
 
