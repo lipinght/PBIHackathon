@@ -2,8 +2,8 @@
 | Labs | Overview | 
 |:------:|:---------:|
 |[Prerequisite](https://github.com/lipinght/PBIHackathon/blob/ninamun-compmodels-wip/CompositeModels/Prerequisite.md)|This page summurizes prerequisites needed to run this series of labs|
-|[DirectQuery for Power BI datasets Lab](https://github.com/lipinght/PBIHackathon/blob/ninamun-compmodels-wip/CompositeModels/DirectQuery%20for%20Power%20BI%20datasets%20Lab.md)|This lab walks through how to connect with Direct Query to a Power BI dataset in the cloud from Power BI Desktop|
-|[Use Composite Model Lab](https://github.com/lipinght/PBIHackathon/blob/ninamun-compmodels-wip/CompositeModels/Use%20Composite%20Model%20Lab.md)|This lab walks through creating, updating, refreshing and publishing a composite model|
+|[Lab 1 - DirectQuery for Power BI datasets](https://github.com/lipinght/PBIHackathon/blob/ninamun-compmodels-wip/CompositeModels/DirectQuery%20for%20Power%20BI%20datasets%20Lab.md)|This lab walks through how to connect with Direct Query to a Power BI dataset in the cloud from Power BI Desktop|
+|[Lab 2 - Use Composite Model](https://github.com/lipinght/PBIHackathon/blob/ninamun-compmodels-wip/CompositeModels/Use%20Composite%20Model%20Lab.md)|This lab walks through creating, updating, refreshing and publishing a composite model|
 
 
 ## Format
