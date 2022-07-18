@@ -6,7 +6,7 @@ This lab requires completion of the **Lab 1 - DirectQuery for Power BI datasets*
 
 1. Download locally on your computer the following Excel spreadsheet: **Promotions.xlxs**
 
-2. In Power BI Desktop, open the .pbix file from lab **DirectQuery for Power BI datasets**
+2. In Power BI Desktop, open the .pbix file from the previous lab **Lab 1 - DirectQuery for Power BI datasets**
 
 3. Click on **Get Data**, choose **Excel Workbook** and then navigate to the **Promotions.xlxs** spreadsheet you downloaded locally
 
@@ -26,13 +26,13 @@ This lab requires completion of the **Lab 1 - DirectQuery for Power BI datasets*
 
 ![cm4.png](images/cm4.png)
 
-8. Navigate to **Relationships** view in Power BI Desktop, you can now see an additional table called **Promotions**, not related to any of the other tables in the model
+8. Navigate to **Model** view in Power BI Desktop, you can now see an additional table called **Promotions**, not related to any of the other tables in the model
 
 ![cm5.png](images/cm5.png)
 
 9. We now need to relate the **Promotions** table to the other tables in the model. To create a relationship between the **Sales** table from the Contoso PBI dataset and the imported **Promotions** table, click on the **Manage Relationships** menu item, then click on **New…**
 
-10. In the **Create relationship**  window select **Sales**. Automatically the window gets populated with sample Sales records and sample Pomotions records, with PromotionKey field highlighted in both tables.
+10. In the **Create relationship**  window select **Sales**. Automatically the window gets populated with sample Sales records and sample Promotions records, with PromotionKey field highlighted in both tables.
 
 ![cm6.png](images/cm6.png)
 
@@ -61,6 +61,8 @@ This lab requires completion of the **Lab 1 - DirectQuery for Power BI datasets*
 21. Navigate to the **Report** view. Now the **DiscountPercent** values should be displayed as percentages
 
 22. From the **Visualizations** panel add a **Slicer** visual
+
+![cm7_1.png](images/cm7_1.png)
 
 23. In the **Fields** panel expand Calendar and select Year to populate the slicer
 
