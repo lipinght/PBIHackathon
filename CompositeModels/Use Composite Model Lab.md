@@ -1,8 +1,8 @@
-# Use Composite Model Lab
+# Lab 2 - Use Composite Model
 This lab walks through how to connect with DirectQuery to a dataset published to Power BI Service and how to enrich this model by including another data connection in Import mode.
 
-**Note:** In order to do this lab, you will need access to premium or premium per user capacity. Do the [prerequisite](https://github.com/lipinght/pbideployment/blob/main/AdvAnalytics/Prerequisite.md#provision-workspace) before starting the lab
-This lab requires completion of the **DirectQuery for Power BI datasets** lab.
+**Note:** In order to do this lab, you will need access to a Power BI workspace. Do the [prerequisite](https://github.com/lipinght/PBIHackathon/blob/ninamun-compmodels-wip/CompositeModels/Prerequisite.md) before starting the lab.
+This lab requires completion of the **Lab 1 - DirectQuery for Power BI datasets** lab.
 
 1. Download locally on your computer the following Excel spreadsheet: **Promotions.xlxs**
 
