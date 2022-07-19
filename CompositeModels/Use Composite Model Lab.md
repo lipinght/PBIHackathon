@@ -92,9 +92,9 @@ This lab requires completion of the **Lab 1 - DirectQuery for Power BI datasets*
 
 ![cm10.png](images/cm10.png)
 
-32. In Power BI Desktop, save your changes then on the menu ribbon click **Publish**
+32. In Power BI Desktop, save your changes.
 
-33. Select a workspace to publish to (If you don’t have a workspace make sure you completed the Prerequisite steps) then click **OK**
+33. 
 
 
 
