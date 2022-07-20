@@ -1,10 +1,10 @@
 # Lab 2 - Use Composite Model
-This lab walks through how to connect with DirectQuery to a dataset published to Power BI Service and how to enrich this model by including another data connection in Import mode.
+This lab walks through how to connect with DirectQuery to a dataset published to Power BI Service and how to enrich this model by including other data connections in Import mode.
 
 **Note:** In order to do this lab, you will need access to a Power BI workspace. Do the [prerequisite](https://github.com/lipinght/PBIHackathon/blob/ninamun-compmodels-wip/CompositeModels/Prerequisite.md) before starting the lab.
 This lab requires completion of the **Lab 1 - DirectQuery for Power BI datasets** lab.
 
-1. Download locally on your computer the following Excel spreadsheet: **Promotions.xlxs**
+1. Download locally on your computer the following Excel spreadsheet: [Promotions.xlxs](https://github.com/lipinght/PBIHackathon/blob/main/CompositeModels/Promotions.xlsx)
 
 2. In Power BI Desktop, open the .pbix file from the previous lab **Lab 1 - DirectQuery for Power BI datasets**
 
@@ -42,7 +42,7 @@ This lab requires completion of the **Lab 1 - DirectQuery for Power BI datasets*
 
 13. Navigate back to the **Report** view
 
-14.	Create a new report page
+14.	Create a new report page, keep the default name **Page 2**
 
 15. From the **Visualisations** panel click on **Table** visual
 
@@ -58,7 +58,7 @@ This lab requires completion of the **Lab 1 - DirectQuery for Power BI datasets*
 
 ![cm7.png](images/cm7.png)
 
-21. Navigate to the **Report** view. Now the **DiscountPercent** values should be displayed as percentages
+21. Navigate to the **Report** view. Now the **DiscountPercent** values should be displayed as percentages on your report
 
 22. From the **Visualizations** panel add a **Slicer** visual
 
@@ -94,49 +94,79 @@ This lab requires completion of the **Lab 1 - DirectQuery for Power BI datasets*
 
 32. In Power BI Desktop, save your changes.
 
-33. 
-
 
 
 # Add measures to a Composite Model
 
-34. In the same Power BI Desktop .pbix file, create a new report page by right click-ing on the current page name and select **Duplicate Page**
+33. In the same Power BI Desktop .pbix file, create a new report page by right click-ing on the current page name **Page 2** and select **Duplicate Page**
 
-35. Click on your table visual in the newly created page, and in the **Visualisations** panel under Columns, remove column BrandName
+34. Rename the new page **Page 3**
 
-36. Click on your table visual in the newly created page, and in the **Fields** panel right click on Sales, then select **New Measure**
+35. Go to **Page 3** and in your report click on the table visual; in the **Visualisations** panel under Columns, remove column BrandName
+
+36. Click on your table visual from **Page 3**, and in the **Fields** panel right click on Sales, then select **New Measure**
 
 37. Copy and Paste the following DAX code for the new measure **NumberOfProducts**, then hit **Enter**
  
 <mark>NumberOfProducts = COUNTROWS ('Product')</mark>
 
-38. Click on your table visual in the newly created page, and in the **Fields** panel > **Sales**, select **NumberOfProducts**
+38. Add the new measure to your report by clicking on your table visual and in the **Fields** panel > **Sales**, select **NumberOfProducts**
 
 ![cm11.png](images/cm11.png)
 
-39. In Power BI Desktop, create a new report page by right click-ing on the current page name and select **Duplicate Page**
+39. In Power BI Desktop, create a new report page by right click-ing on the current page name **Page 3** and select **Duplicate Page**; rename the new page as **Page 4**
 
-40. Click on your table visual in the newly created page, and in the **Visualisations** panel under Columns, remove columns SalesAmount, NumberOfProducts
+40. Click on your table visual in **Page 4**, and in the **Visualisations** panel under Columns, remove columns SalesAmount, NumberOfProducts
 
-41. Click on your table visual in the newly created page, and in the **Fields** panel right click on Sales, then select **New Measure**
+41. Click on your table visual in **Page 4**, and in the **Fields** panel right click on Sales, then select **New Measure**
 
 42. Copy and Paste the following DAX code for the new measure **SumOfSales**, then hit **Enter**
 
 <mark>SumOfSales = SUM(Sales[SalesAmount])</mark>
 
-43. Click on your table visual in the newly created page, and in the **Fields** panel > **Sales**, select **NumberOfProducts**
+43. Click on your table visual, and in the **Fields** panel right click on Sales, then select **New Measure**
 
-44. Click on your table visual in the newly created page, and in the **Fields** panel right click on Sales, then select **New Measure**
-
-45. Copy and Paste the following DAX code for the new measure **YTDSumOfSales**, then hit **Enter** 
+44. Copy and Paste the following DAX code for the new measure **YTDSumOfSales**, then hit **Enter** 
 
 <mark>YTDSumOfSales = TOTALYTD([SumOfSales],'Calendar'[DateKey])</mark>
 
-46. Click on your table visual in the newly created page, and in the **Fields** panel > **Sales**, select **YTDSumOfSales**
+45. Click on your table visual, and in the **Fields** panel > **Sales**, select **YTDSumOfSales**
 
-47. On the menu ribbon, **Measure** tools, format YTDSumOfSales measure by adding comma as a thousands separator and add a currency symbol
+46. On the menu ribbon, **Measure** tools, format YTDSumOfSales measure by adding comma as a thousands separator and add a currency symbol
 
 ![cm12.png](images/cm12.png)
 
 
+# Use Many-to-many Relationships in a Composite Model
 
+47. Download locally on your computer the following Excel spreadsheet: [ProductManagers.xlxs](https://github.com/lipinght/PBIHackathon/blob/main/CompositeModels/ProductManagers.xlsx)
+
+48. In Power BI Desktop, click on **Get Data**, choose **Excel Workbook** and then navigate to the **ProductManagers.xlxs** spreadsheet you downloaded locally
+
+49. Select the **ProductManagers** checkbox in the Navigator window and click **Transform Data** button to update the column names Column1 and Column2 to something meaningful
+
+![cm13.png](images/cm13.png)
+
+50. In the Power Query Editor window, click on the table icon left of Column1 and select **Use First Row as Headers** then **Close & Apply**
+
+![cm14.png](images/cm14.png)
+
+51. We now need to relate the **ProductManagers** table to the other tables in the model. In the **Model** view, to create a relationship between the **Product** table from the Contoso PBI dataset and the imported **ProductManagers** table, click on the **Manage Relationships** menu item, then click on **New…**
+
+52. In the **Create relationship**  window select **Product** in the first dropdown and **ProductManagers** in the second one.
+
+53. By default all relationships that go across source default to many-to-many cardinality. Set the **Cross filter direction** to Single. Click **OK**. Click **Close**
+
+![cm15.png](images/cm15.png)
+
+54. Click on **ProductManagers** table, right click **BrandName** field and select **Hide in report view**
+
+55. Navigate to the **Report** view and create a new report page. Add a **Table** visual
+
+56. In the **Fields** panel > **ProductManagers**, select **ProductManager**
+
+57. In the **Fields** panel > **Sales**, select **SumOfSales**
+
+![cm16.png](images/cm16.png)
+
+58. Save your changes
