@@ -1,5 +1,5 @@
 # Lab 1 - DirectQuery for Power BI datasets
-This lab walks through how to connect with DirectQuery to a dataset published to Power BI Service and how to enrich the metadata of this model with new columns.
+This lab walks through how to connect with DirectQuery to a dataset published to Power BI Service and how to enrich the metadata of this model with new columns in Power BI Desktop.
 
 **Note:** In order to do this lab, do the [prerequisite](https://github.com/lipinght/PBIHackathon/blob/ninamun-compmodels-wip/CompositeModels/Prerequisite.md)
 
@@ -12,25 +12,25 @@ This lab walks through how to connect with DirectQuery to a dataset published to
 
 3. In the **Data Hub** window search for Contoso and select **Contoso DS** then click **Connect**
 
-4. In **Connect to your data** window make sure Contoso DS is checked along with all tables
+4. Once the model has loaded into Power BI Desktop, go to **Fields** panel and explore the tables loaded
 
-![dq2.png](images/dq2.png)
-
-5. Once the model has loaded into Power BI Desktop, go to **Fields** panel and explore the tables loaded
-
-6. To see which connections are being used in your model, check the status bar in the bottom right corner of Power BI Desktop. If you're only connected to a Power BI dataset, you see a message like the following image:
+5. To see which connections are being used in your model, check the status bar in the bottom right corner of Power BI Desktop. If you're only connected to a Power BI dataset, you see a message like the following image:
 
 ![dq4.png](images/dq4.png)
 
-7. Go to **Fields** panel, click on **Sales** table, on the **ellipses (...)** and try to add a new column by clicking on **New Column** button - notice that this is not possible in **Live** Mode
+6. Go to **Fields** panel, click on **Sales** table, on the **ellipses (...)** and try to add a new column by clicking on **New Column** button - notice that this is not possible in **Live** Mode
 
-8. In Power BI Desktop click on **Home** > **Transform Data** > **Add a Local Model**. 
-
-9. Selecting the button displays a dialog confirming addition of a local model. Select **Add a local model** to enable creating new columns or modifying the metadata for fields from the Contoso Power BI dataset:
+7. In Power BI Desktop click on **Home** > **Transform Data**. A message window shows-up with **A DirectQuery connection is required** indicating that you need to switch to a local version of the model for further transformations.
 
 ![dq5.png](images/dq5.png)
 
-10. In the next window click **Submit**
+8. Select **Add a local model** to enable creating new columns or modifying the metadata for fields from the Contoso Power BI dataset
+
+9. In **Connect to your data** window make sure Contoso DS is checked along with all tables
+
+![dq2.png](images/dq2.png)
+
+10. Click **Submit**
 
 11. Close the Power Query Editor window
 
@@ -42,7 +42,7 @@ This lab walks through how to connect with DirectQuery to a dataset published to
 
 ![dq6.png](images/dq6.png)
 
-15. Go to **Fields** panel, click on **Sales** table, on the **...** and try to add a new column by clicking on **New Column** button - notice that this is now possible and that **New Column** option is available in the menu. Click on **New Column**
+15. Go to **Fields** panel, click on **Sales** table, on the **ellipses (...)** and try to add a new column by clicking on **New Column** button - notice that this is now possible and that **New Column** option is available in the menu. Click on **New Column**
 
 16. Copy and Paste the following DAX code in the calculation ribbon to add a new **SalesQuantityBand** calculated column: 
 
@@ -56,4 +56,4 @@ This lab walks through how to connect with DirectQuery to a dataset published to
 
 19. Select a workspace to publish to (If you don’t have a workspace make sure you completed the Prerequisite steps)
 
-20. Click OK
+20. Click **OK**
