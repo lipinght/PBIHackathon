@@ -52,8 +52,4 @@ This lab walks through how to connect with DirectQuery to a dataset published to
 
 ![dq7.png](images/dq7.png)
 
-18. In Power BI Desktop, save your changes then on the menu ribbon click **Publish**
-
-19. Select a workspace to publish to (If you don’t have a workspace make sure you completed the Prerequisite steps)
-
-20. Click **OK**
+18. In Power BI Desktop, save your changes.
