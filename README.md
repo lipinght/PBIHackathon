@@ -15,3 +15,4 @@ This is a repo containing modules for Power BI Hackathon, these modules can be d
 | [Programmatic Refresh](https://github.com/lipinght/PBIHackathon/blob/main/ProgrammaticRefresh/ProgrammaticRefresh.md) | Demo | Engineers; Modellers | 1 hour |
 | [Visualization Best Practice](https://github.com/lipinght/PBIHackathon/blob/main/VisualizationBestPractice/Visualization.md) | Presentation | Report Builder | 1 hour |
 | [Hybrid Tables(WIP)](https://github.com/lipinght/PBIHackathon/blob/main/HybridTables/HybridTables.md) | Presentation | Modeller | 1 hour |
+| [Composite Models(WIP)](https://github.com/lipinght/PBIHackathon/blob/main/CompositeModels/CompositeModelsLabs.md) | Hands-on Labs | Modeller;Report Builder; End Users | 1 hour |
