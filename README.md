@@ -9,6 +9,7 @@ This is a repo containing modules for Power BI Hackathon, these modules can be d
 | [Deployment Pattern](https://github.com/lipinght/PBIHackathon/blob/main/DeploymentPattern/DeploymentPattern.md) | Presentation | Power BI Admin; Executives | 0.5 hours |
 | [Power BI DevOps](https://github.com/lipinght/PBIHackathon/blob/main/DevOps/DevOps.md) | Presentation+Demo (Ready) + Hands-on Labs (WIP) | Engineers | 1 hour |
 | [Direct Query Best Practice](https://github.com/lipinght/PBIHackathon/blob/main/DirectQueryBestPractice/DirectQuery.md) | Presentation | Modeller | 1 hour |
+| [External Tools](https://github.com/lipinght/PBIHackathon/tree/main/External%20Tools/ExternalTools.md) | Presentation + Demo | Modeller + Report Authors| 1 hour |
 | [Performance Best Practice](https://github.com/lipinght/PBIHackathon/blob/main/PerformanceBestPractice/Performance.md) | Presentation | Modeller | 1 hour |
 | [Power BI Synapse Better Together](https://github.com/lipinght/PBIHackathon/blob/main/PowerBISynapse/Synapse.md) | Presentation+Demo | Engineers; Modellers | 1 hour |
 | [Power BI RLS](https://github.com/lipinght/PBIHackathon/blob/main/RLS/RLS.md) | Presentation+Demo | Modellers | 0.5 hour |
